@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juan Carlos Medina | Landing Page PWA</title>
+  <meta name="description" content="Landing Page / Portafolio base para PWA con experiencia, habilidades y contacto." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Fondo decorativo -->
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#inicio">JC</a>
+
+      <nav class="menu" aria-label="Navegación principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#estudios">Estudios</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#multimedia">Multimedia</a>
+        <a class="btn btn--sm" href="#contacto">Contáctame</a>
+      </nav>
+
+      <button class="burger" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="inicio" class="hero">
+    <div class="container hero__grid">
+      <div class="hero__text reveal">
+        <p class="pill">Ingeniería en Desarrollo de Software • Soporte TI</p>
+        <h1>Juan Carlos Medina Sánchez</h1>
+        <p class="lead">
+          Estudiante de Ingeniería en Desarrollo de Software con experiencia en soporte técnico,
+          administración de sistemas y desarrollo web. Me enfoco en resolver incidencias, optimizar
+          procesos y construir soluciones funcionales.
+        </p>
+
+        <div class="cta">
+          <a class="btn" href="#contacto">Enviar mensaje</a>
+          <a class="btn btn--ghost" href="#experiencia">Ver experiencia</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <span class="stat__num" data-count="2">0</span>
+            <span class="stat__label">Prácticas TI</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="6">0</span>
+            <span class="stat__label">Áreas técnicas</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="11">0</span>
+            <span class="stat__label">Cuatrimestres (Ing.)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta perfil (imagen) -->
+      <aside class="profile reveal">
+        <div class="profile__card">
+          <div class="profile__img">
+            <!-- Cambia la ruta por tu foto real: /img/juan.jpg -->
+            <img src="img/Image.jpg" alt="Foto de perfil de Juan Carlos" onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback');" />
+            <div class="fallback">
+              <div class="avatar">JC</div>
+              <p>Agrega tu foto en <b>img/foto-perfil.jpg</b></p>
+            </div>
+          </div>
+
+          <div class="profile__info">
+            <h2>Contacto rápido</h2>
+            <ul>
+              <li>📧 <a href="mailto:juamedca81@gmail.com">juamedca81@gmail.com</a></li>
+              <li>📱 <a href="tel:+526142022081">614-202-2081</a></li>
+              <li>📍 Chihuahua, Chihuahua</li>
+              <li>🧾 Licencia: A</li>
+              <li>🌎 Nacionalidad: Mexicana</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="chips">
+          <span class="chip">Active Directory</span>
+          <span class="chip">Microsoft 365</span>
+          <span class="chip">React</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">SQL Server</span>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- SOBRE MI -->
+  <section id="sobre-mi" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy una persona proactiva, con mentalidad de aprendizaje continuo y gusto por la tecnología.
+          He trabajado en soporte TI y administración de sistemas, y también he desarrollado proyectos web
+          con JavaScript, React y Node.js.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <article class="card reveal">
+          <h3>Lo que me caracteriza</h3>
+          <ul class="list">
+            <li>✅ Resolución de problemas y atención a incidencias</li>
+            <li>✅ Servicio al cliente y trabajo en equipo</li>
+            <li>✅ Adaptabilidad y puntualidad</li>
+            <li>✅ Aprendizaje continuo</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <h3>Objetivo</h3>
+          <p>
+            Seguir creciendo en desarrollo de software y sistemas, aportando soluciones eficientes y
+            de calidad. Me interesa combinar soporte/infraestructura con desarrollo para crear mejoras reales.
+          </p>
+
+          <div class="mini-banner">
+            <span>Idioma:</span> Español (Nativo) • Inglés (A1)
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section id="experiencia" class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2>Histórico de empleos / experiencia</h2>
+        <p>Experiencia real basada en tu CV: soporte TI, administración de sistemas y apoyo a usuarios. :contentReference[oaicite:1]{index=1}</p>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <h3>Practicante Soporte Técnico TI — CROCSA</h3>
+            <p class="muted">09/2024 – 02/2025</p>
+            <ul class="list">
+              <li>Soporte a equipos y sistemas internos</li>
+              <li>Mantenimiento hardware/software</li>
+              <li>Active Directory: usuarios, grupos y permisos</li>
+              <li>Microsoft 365: licencias, Exchange, Teams, OneDrive, SharePoint</li>
+              <li>Redes, impresoras y dispositivos</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <h3>Responsable TI y Docente — Escuela Primaria</h3>
+            <p class="muted">03/2025 – 05/2025</p>
+            <ul class="list">
+              <li>Encargado del área de TI</li>
+              <li>Soporte a personal docente y administrativo</li>
+              <li>Configuración y administración de red</li>
+              <li>Apoyo educativo y actividades académicas</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <h3>Practicante Soporte Técnico TI — CROCSA</h3>
+            <p class="muted">06/2025 – 10/2025</p>
+            <ul class="list">
+              <li>Soporte técnico y atención a incidencias</li>
+              <li>Administración de Microsoft 365 y Active Directory</li>
+              <li>Configuración de redes y dispositivos</li>
+              <li>Capacitación a usuarios</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout reveal">
+        <h3>¿Qué puedo aportar?</h3>
+        <p>
+          Soporte TI completo, administración básica de infraestructura, y desarrollo web para automatizar procesos
+          o crear interfaces útiles (paneles, formularios, dashboards).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESTUDIOS -->
+  <section id="estudios" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Estudios</h2>
+        <p>Formación técnica y universitaria en desarrollo de software y soporte. :contentReference[oaicite:2]{index=2}</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card reveal">
+          <h3>Ingeniería en Desarrollo de Software</h3>
+          <p class="muted">Universidad Tecnológica de Chihuahua • 01/2025 – Actual</p>
+          <p>Cursando 9.º cuatrimestre de 11.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>TSU en Desarrollo de Software</h3>
+          <p class="muted">Universidad Tecnológica de Chihuahua • 01/2023 – 12/2024</p>
+          <p>Titulado: Enero 2025</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>Técnico en Soporte y Mantenimiento</h3>
+          <p class="muted">CBTis 158 • 06/2019 – 06/2021</p>
+          <p>Especialidad en soporte y mantenimiento de equipos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2>Habilidades técnicas</h2>
+        <p>Stack y herramientas que dominas según tu CV. :contentReference[oaicite:3]{index=3}</p>
+      </div>
+
+      <div class="skills">
+        <div class="skill-card reveal">
+          <h3>Administración</h3>
+          <div class="bars">
+            <div class="bar">
+              <span>Active Directory / GPO</span>
+              <div class="track"><div class="fill w90"></div></div>
+            </div>
+            <div class="bar">
+              <span>Microsoft 365 (Exchange, Teams, OneDrive, SharePoint)</span>
+              <div class="track"><div class="fill w85"></div></div>
+            </div>
+            <div class="bar">
+              <span>Proxmox / VirtualBox</span>
+              <div class="track"><div class="fill w75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3>Desarrollo</h3>
+          <div class="tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">React</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">Git/GitHub</span>
+            <span class="tag">VS Code</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3>Bases de datos</h3>
+          <div class="tags">
+            <span class="tag">MongoDB</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag">MySQL</span>
+          </div>
+          <p class="muted">Consultas, modelos y operaciones básicas para proyectos académicos.</p>
+        </div>
+      </div>
+
+      <div class="soft reveal">
+        <h3>Competencias personales</h3>
+        <div class="soft__grid">
+          <span class="soft-pill">Proactivo</span>
+          <span class="soft-pill">Trabajo en equipo</span>
+          <span class="soft-pill">Liderazgo</span>
+          <span class="soft-pill">Adaptabilidad</span>
+          <span class="soft-pill">Servicio al cliente</span>
+          <span class="soft-pill">Resolución de problemas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MULTIMEDIA: IMÁGENES + VIDEO -->
+  <section id="multimedia" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Multimedia</h2>
+        <p>
+          
+        </p>
+      </div>
+
+      <!-- Galería -->
+      <div class="gallery">
+        <figure class="gcard reveal">
+          <img src="img/Lenguaje.jpg" alt="Proyecto 1" onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback');" />
+          <figcaption>
+            <h3>Proyecto web</h3>
+            <p>Landing / Portafolio (HTML, CSS, JS)</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gcard reveal">
+          <img src="img/soporte.jpg" alt="Proyecto 2" onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback');" />
+          <figcaption>
+            <h3>Soporte TI</h3>
+            <p>Redes / impresoras / incidencias</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gcard reveal">
+          <img src="img/BD.jpeg" alt="Proyecto 3" onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback');" />
+          <figcaption>
+            <h3>Base de datos</h3>
+            <p>MongoDB / SQL Server</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gcard reveal">
+          <img src="img/virtualizacion.jpg" alt="Proyecto 4" onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback');" />
+          <figcaption>
+            <h3>Virtualización</h3>
+            <p>Proxmox / VirtualBox</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Video -->
+      <div class="video-card reveal">
+        <div class="video-head">
+          <h3>Video / Demo</h3>
+          <p class="muted">Puedes poner un video tuyo (demo) o un proyecto en YouTube.</p>
+        </div>
+
+        <!-- Cambia el ID del video por el que tú quieras -->
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Video de demostración"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="final-cta">
+    <div class="container final-cta__inner reveal">
+      <h2>¿Trabajamos juntos?</h2>
+      <p>Si te interesa mi perfil, envíame un mensaje y con gusto respondo lo antes posible.</p>
+      <a class="btn" href="#contacto">Ir al formulario</a>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2>Formulario de contacto</h2>
+        <p>Este formulario abre tu correo con el mensaje listo (modo estudiante, práctico).</p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="form card reveal" id="contactForm">
+          <label>
+            Nombre
+            <input type="text" id="nombre" placeholder="Tu nombre completo" required />
+          </label>
+
+          <label>
+            Correo
+            <input type="email" id="correo" placeholder="tucorreo@gmail.com" required />
+          </label>
+
+          <label>
+            Asunto
+            <input type="text" id="asunto" placeholder="Motivo del mensaje" required />
+          </label>
+
+          <label>
+            Mensaje
+            <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+          </label>
+
+          <button class="btn" type="submit">Enviar por correo</button>
+          <p class="muted small">Tip: también puedes imprimir esta página y guardarla como PDF.</p>
+        </form>
+
+        <aside class="card reveal">
+          <h3>Datos</h3>
+          <ul class="list">
+            <li>📧 <a href="mailto:juamedca81@gmail.com">juamedca81@gmail.com</a></li>
+            <li>📱 <a href="tel:+526142022081">614-202-2081</a></li>
+            <li>📍 Chihuahua, Chihuahua</li>
+          </ul>
+
+          <div class="divider"></div>
+
+          <h3>Disponibilidad</h3>
+          <p class="muted">
+            Abierto a prácticas, proyectos académicos y trabajo inicial en TI / desarrollo.
+          </p>
+
+          <div class="divider"></div>
+
+          <h3>Mini checklist (para tu entrega)</h3>
+          <ul class="list">
+            <li>✅ Título y subtítulo</li>
+            <li>✅ Histórico (empleos/proyectos)</li>
+            <li>✅ Visuales (galería + video)</li>
+            <li>✅ CTA + Formulario</li>
+            <li>✅ Texto efectivo</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 Juan Carlos Medina • Landing Page base para PWA</p>
+      <a href="#inicio" class="to-top" aria-label="Volver arriba">↑</a>
+    </div>
+  </footer>
+
+  <script>
+    // Menú móvil
+    const burger = document.querySelector(".burger");
+    const menu = document.querySelector(".menu");
+    burger.addEventListener("click", () => {
+      const open = menu.classList.toggle("menu--open");
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+
+    // Animación de aparición al hacer scroll
+    const els = document.querySelectorAll(".reveal");
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add("show");
+      });
+    }, { threshold: 0.12 });
+    els.forEach(el => io.observe(el));
+
+    // Contadores del hero
+    const counters = document.querySelectorAll("[data-count]");
+    let counted = false;
+    const counterIO = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting && !counted) {
+          counted = true;
+          counters.forEach(c => {
+            const target = Number(c.dataset.count);
+            let cur = 0;
+            const step = Math.max(1, Math.floor(target / 30));
+            const timer = setInterval(() => {
+              cur += step;
+              if (cur >= target) { cur = target; clearInterval(timer); }
+              c.textContent = cur;
+            }, 20);
+          });
+        }
+      });
+    }, { threshold: 0.4 });
+    const hero = document.querySelector(".hero");
+    if (hero) counterIO.observe(hero);
+
+    // Formulario: abre mailto con datos
+    document.getElementById("contactForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const nombre = document.getElementById("nombre").value.trim();
+      const correo = document.getElementById("correo").value.trim();
+      const asunto = document.getElementById("asunto").value.trim();
+      const mensaje = document.getElementById("mensaje").value.trim();
+
+      const to = "juamedca81@gmail.com";
+      const subject = encodeURIComponent(asunto);
+      const body = encodeURIComponent(
+        `Hola Juan Carlos,\n\n` +
+        `${mensaje}\n\n` +
+        `---\n` +
+        `Nombre: ${nombre}\n` +
+        `Correo: ${correo}\n`
+      );
+
+      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>
+</html>
