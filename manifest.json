@@ -1,0 +1,24 @@
+{
+  "name": "PWA de Juan",
+  "short_name": "PWA",
+  "description": "PWA creada en clase de utch",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007807",
+  "orientation": "portrait-primary",
+  "start_url": "./index.html?utm_source=web_app_manifest",
+  "scope": "./",
+  "lang": "es-MX",
+  "icons": [
+    { "src": "image2/16.png", "sizes": "16x16", "type": "image/png" },
+    { "src": "image2/32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "image2/64.png", "sizes": "64x64", "type": "image/png" },
+    { "src": "image2/96.png", "sizes": "96x96", "type": "image/png" },
+    { "src": "image2/128.png", "sizes": "128x128", "type": "image/png" },
+    { "src": "image2/192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "image2/256.png", "sizes": "256x256", "type": "image/png" },
+    { "src": "image2/384.png", "sizes": "384x384", "type": "image/png" },
+    { "src": "image2/512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "image2/1024.png", "sizes": "1024x1024", "type": "image/png" }
+  ]
+}
