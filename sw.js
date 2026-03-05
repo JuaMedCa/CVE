@@ -56,3 +56,13 @@ self.addEventListener('activate', (e) => {
       .then(() => self.clients.claim())
   );
 });
+
+//evento fetch (intercepta las peticiones y responde con el cache o la petición a la url)
+self.addEventListener('fetch', (e) => {
+  e.respondWith(
+    caches.match(e.request).then((response) => {
+      if (response) return response; // Devuelve el recurso cacheado
+      return fetch(e.request); // Realiza la petición a la URL
+    })
+  );
+});
